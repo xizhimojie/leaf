@@ -47,6 +47,24 @@
 			window.location = "${ctx}/back/addPost";
 		});
 	});
+
+	function ajaxFileUpload() {
+		$.ajaxFileUpload({
+			url : '${ctx}/back/AddPostPhotoServlet',// servlet请求路径
+			secureuri : false,
+			fileElementId : 'fileToUpload',// 上传控件的id
+			dataType : 'json',
+			data : {}, // 其它请求参数
+			success : function(data, status) {
+				$("#adress").append("<div class=\"alert alert-info\"><a href=\"http://" + data.msg + "\" class=\"alert-link\"  target=\"_blank\">" + data.msg + "</a></div>")
+			},
+			error : function(data, status, e) {
+				$("#adress").append("<p>"+ 上传文件不能为空 +"</p>")
+			}
+		})
+		return false;
+
+	}
 </script>
 </head>
 
@@ -96,7 +114,16 @@
                                         </div>
                                         <button type="submit" class="btn btn-default">提交</button>
                                     </form>
-                            </div>
+								</div>
+								<div class="form-group">
+									<label>图片上传（目前只支持七牛云存储）</label>
+									<form name="fileform" action="${ctx}/back/AddPostPhotoServlet" method="POST" enctype="multipart/form-data">
+										<input id="fileToUpload" type="file" size="45" name="fileToUpload">
+										<button class="btn btn-default" onclick="return ajaxFileUpload();">上传</button>
+									</form>
+								</div>
+								<div id ="adress" class="col-lg-9">
+								</div>
                             <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
@@ -141,7 +168,7 @@
 
 	<!-- Custom Theme JavaScript -->
 	<script src="${pageContext.request.contextPath}/js/sb-admin-2.js"></script>
-
+	<script src="${pageContext.request.contextPath}/js/ajaxfileupload.js"></script>
 </body>
 
 </html>

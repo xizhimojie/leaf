@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>archive</title>
+<title>archive - <%=Constants.sitename%></title>
 <%@ include file="../front/layout/header.jsp"%>
 </head>
 
