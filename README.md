@@ -21,7 +21,7 @@ Quick Start
 1. 进入~\src\main\webapp\WEB-INF，编辑db_server.properties
 
     数据库地址
-	url=jdbc:mysql://127.0.0.1:3306/xizhimojie
+    url=jdbc:mysql://127.0.0.1:3306/xizhimojie
 	数据库用户名
 	username=root
 	数据库密码
@@ -44,4 +44,4 @@ Quick Start
 4. 在target目录下面把安装包放到tomcat/ROOT下面，启动tomcat
 
 5. 后台地址为/login, 默认密码为admin/admin, 请及时修改
-6. have fun~
+
