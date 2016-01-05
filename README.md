@@ -21,21 +21,21 @@ Quick Start
 1. 进入~\src\main\webapp\WEB-INF，编辑db_server.properties
 
     数据库地址
-    url=jdbc:mysql://127.0.0.1:3306/xizhimojie
-	数据库用户名
-	username=root
-	数据库密码
-	password=123456
-	网址
-	website=www.xizhimojie.com
-    站点名称
-	sitename=细枝末节
-	多说插件（账号申请：http://duoshuo.com/）配置下面帐号
-	duoshuo=
-	七牛云存储token(申请指南http://developer.qiniu.com/)，配置下面三个参数
-    ACCESS_KEY=
-	SECRET_KEY=
-	QINIU_URL=
+    	url=jdbc:mysql://127.0.0.1:3306/xizhimojie  
+	数据库用户名  
+	username=root  
+	数据库密码  
+	password=123456  
+	网址  
+	website=www.xizhimojie.com  
+	站点名称  
+	sitename=细枝末节  
+	多说插件（账号申请：http://duoshuo.com/）配置下面帐号  
+	duoshuo=  
+	七牛云存储token(申请指南http://developer.qiniu.com/)，配置下面三个参数  
+    	ACCESS_KEY=  
+	SECRET_KEY=  
+	QINIU_URL=  
 
 2. 导入数据库脚本\~blog\src\main\webapp\WEB-INF\init.sql
 
