@@ -207,7 +207,7 @@ footer {
     footer a:hover, footer header #header h1 a:hover, header #header h1 footer a:hover, footer article .meta .tags a:hover, article .meta .tags footer a:hover {
       color: #999999; }
 
-#tag_cloud {
+.tag_cloud {
   margin-bottom: 1em; }
 
 .gist {

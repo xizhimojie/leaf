@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="${ctx}/media/css/font-awesome.min.css">
 	<link rel="stylesheet" href="${ctx}/media/css/style.css">
 	<link rel="stylesheet" href="${ctx}/media/css/github.css">
-	<link rel="stylesheet" href="${ctx}/media/css/fontawesome.css">
-	<script src="${ctx}/media/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script> 
+	<script src="${ctx}/media/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="${ctx}/media/js/highlight.pack.js"></script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();

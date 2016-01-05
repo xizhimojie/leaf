@@ -21,9 +21,11 @@
 <header class="site-header">
     <a href="${pageContext.request.contextPath}/index" alt="<%=Constants.sitename %>" class="name"><%=Constants.sitename %></a>
     <nav class="site-nav">
-    	<a href="${ctx}/projects" alt="Projects">Projects</a>
+    	<%--<a href="${ctx}/projects" alt="Projects">Projects</a>--%>
+
 		<a href="${ctx}/archive" alt="Archive">Archive</a>
-        <%-- <a href="${ctx}/links" alt="Links">Links</a> --%>
+        <a href="${ctx}/tags" alt="Tags">Tags</a>
+        <a href="${ctx}/links" alt="Links">Links</a>
         <a href="${ctx}/about" alt="About">About Me</a>
 
     </nav>

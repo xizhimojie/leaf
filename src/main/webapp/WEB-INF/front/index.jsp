@@ -55,7 +55,7 @@
 				</ul>
 				<div class="divider"></div>
 				<ul class="listing main-listing">
-					<li class="listing-seperator">Happend earlier</i> 
+					<li class="listing-seperator">Happend earlier</i></li>
 					<c:forEach items="${newestPosts}" var="post">
 							<li class="listing-item"><time
 									datetime="<fmt:formatDate value="${post.publicDate}" pattern="yyyy-MM-dd"/>">

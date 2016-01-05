@@ -11,8 +11,8 @@ CREATE TABLE SYS_USER
 	PRIMARY KEY (ID)
 ) COMMENT = '用户表';
 
-DROP TABLE IF EXISTS `blog_post`;
-CREATE TABLE `blog_post` (
+DROP TABLE IF EXISTS `BLOG_POST`;
+CREATE TABLE `BLOG_POST` (
 `ID`  bigint(20) NOT NULL AUTO_INCREMENT COMMENT '文章ID' ,
 `USER_ID`  bigint(20) NOT NULL COMMENT '文章作者' ,
 `PUBLIC_DATE`  datetime NULL DEFAULT NULL COMMENT '发布时间' ,
@@ -72,8 +72,8 @@ CREATE TABLE BLOG_ABOUT
 -- ----------------------------
 -- Table structure for `blog_link`
 -- ----------------------------
-DROP TABLE IF EXISTS `blog_link`;
-CREATE TABLE `blog_link` (
+DROP TABLE IF EXISTS `BLOG_LINK`;
+CREATE TABLE `BLOG_LINK` (
 `ID`  bigint(20) NOT NULL AUTO_INCREMENT ,
 `NAME`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
 `URL`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
@@ -105,6 +105,6 @@ AUTO_INCREMENT=14
 
 INSERT INTO `BLOG_PROJECTS` VALUES (1, 'hello world');
 INSERT INTO `BLOG_ABOUT` VALUES (1, 'hello world');
-INSERT INTO `sys_user` VALUES (1, 'admin', 'admin', 'admin', NULL, NULL, NULL, NULL);
-INSERT INTO `blog_post` VALUES (1, 1, '2015-5-6 01:24:17', 'hello world~ have fun~', 'hello world', '1', '2015-5-6 01:24:40', NULL, 1, 'helloworld', 1, 1, 1);
-INSERT INTO `blog_term` VALUES (1, '文章', '0','1', '0');
+INSERT INTO `SYS_USER` VALUES (1, 'admin', 'admin', 'admin', NULL, NULL, NULL, NULL);
+INSERT INTO `BLOG_POST` VALUES (1, 1, '2015-5-6 01:24:17', 'hello world~ have fun~', 'hello world', '1', '2015-5-6 01:24:40', NULL, 1, 'helloworld', 1, 1, 1);
+INSERT INTO `BLOG_TERM` VALUES (1, '文章', '0','1', '0');

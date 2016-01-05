@@ -25,7 +25,7 @@
 					<h2>catagory</h2>
 				</section>
 				<section class="post">
-					<div id='tag_cloud'>
+					<div class='tag_cloud'>
 						<c:forEach items="${terms}" var="term">
 						<a href="${ctx}/term/${term.name}" title="${term.name}" rel="5">${term.name}</a>
 						</c:forEach>
@@ -34,15 +34,13 @@
 			</article>
 			<article>
 				<section class="title">
-					<h2>Tags</h2>
+					<h2>tags</h2>
 				</section>
 				<section class="post">
-					<div id='tag_cloud'>
-						<div id='tag_cloud'>
+						<div class='tag_cloud'>
 						<c:forEach items="${tags}" var="tag">
 						<a href="${ctx}/tag/${tag.name}" title="${tag.name}" rel="5">${tag.name}</a>
 						</c:forEach>
-					</div>
 					</div>
 				</section>
 			</article>
