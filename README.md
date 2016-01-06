@@ -1,6 +1,6 @@
 此站点用java编写，用时将近一个星期，还是颇费了一番力气，项目代码写的不算好，也没什么单元测试.请轻拍. 虽然功能简单， 但还是有些亮点:
 
-1. 技术选型简单，servlet3.0 + DBUtils + Mysql, 数据源druid, 用servlet3实现的restful.
+1. 技术选型简单，Servlet3.0 + DBUtils + Mysql, 数据源druid, 用Servlet3实现的restful.
 2. 考虑到快速建站，配置文件分离，支持图片分离（支持七牛存储接口).
 3. 多说插件支持，申请多说帐号，配置文件写入帐号即可.
 4. markdown语法支持.支持Github风格的Markdown.
@@ -30,9 +30,9 @@ Quick Start
 	website=www.xizhimojie.com  
 	站点名称  
 	sitename=细枝末节  
-	多说插件（账号申请：http://duoshuo.com/）配置下面帐号  
+	多说插件,配置下面帐号,账号申请：http://duoshuo.com  
 	duoshuo=  
-	七牛云存储token(申请指南http://developer.qiniu.com/)，配置下面三个参数  
+	七牛云存储token,配置下面三个参数,申请指南:http://developer.qiniu.com/  
     	ACCESS_KEY=  
 	SECRET_KEY=  
 	QINIU_URL=  
