@@ -28,7 +28,7 @@
 
 				<section class="post">
 					<c:forEach items="${links}" var="link">
-						<p>
+						<p style="padding: 0 0;">
 							<a href="http://${link.url }">${link.name }</a><br />
 						</p>
 					</c:forEach>
