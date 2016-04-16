@@ -35,10 +35,10 @@ public class IndexServlet extends HttpServlet{
 		MarkdownProcessor markup = new MarkdownProcessor();
 		newestPost.setContent(markup.markdown(newestPost.getContent()));
 		String lengthFlag = "0";
-		if(newestPost.getContent().length() > 500) {
+		if(newestPost.getContent().length() > 130) {
 			lengthFlag = "1";
 			newestPost.setContent(
-					StringUtils.abbreviate(newestPost.getContent(), 500));
+					StringUtils.abbreviate(newestPost.getContent(), 130));
 		}
 		request.setAttribute("newestPost", newestPost);
 		request.setAttribute("newestPosts", newestPosts);
