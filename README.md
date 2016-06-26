@@ -9,7 +9,7 @@
 
 演示站点:
 
-    http://www.xizhimojie.com
+    http://www.xizhimojie.com(已废弃, 此站点已改用jekyll.)
 
 ================================================================
 Quick Start
